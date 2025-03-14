@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Message Board</h1>
+    </header>
+
+    <section>
+      <h2>Configuration</h2>
+      <label for="serverUrl">Adresse du serveur :</label>
+      <input type="text" id="serverUrl" placeholder="http://localhost:8080" />
+      <button id="saveServerUrl">Enregistrer</button>
+    </section>
+
+    <section>
+      <button id="themeButton">Mode clair/sombre</button>
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+
+    <section>
+      <h2>Poster un message</h2>
+      <form id="messageForm">
+        <input
+          type="text"
+          id="pseudo"
+          placeholder="Entrez votre pseudo"
+          required
+        />
+        <textarea
+          id="message"
+          rows="4"
+          cols="50"
+          placeholder="Écrivez votre message ici..."
+          required
+        ></textarea>
+        <button type="submit" id="sendButton">Envoyer</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
